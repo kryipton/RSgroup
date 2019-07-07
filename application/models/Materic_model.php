@@ -9,7 +9,7 @@ class Materic_model extends CI_Model{
     }
 
 
-//    =========================About hissesi=========================================
+//    =========================Portfolio hissesi=========================================
     public function get_portfolio_limit()
     {
         return $this->db->limit(6)->order_by("id", "DESC")->get("portfolio")->result_array();
@@ -23,9 +23,14 @@ class Materic_model extends CI_Model{
 
 
 //    =========================Gallery hissesi=========================================
-    public function get_gallery()
+    public function get_gallery($limit, $count)
     {
-        return $this->db->get("gallery")->result_array();
+        return $this->db->limit($limit, $count)->get('gallery')->result_array();
+    }
+
+    public function get_gallery_counts()
+    {
+        return $this->db->count_all('gallery');
     }
 
 
