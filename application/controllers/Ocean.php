@@ -775,6 +775,7 @@ class Ocean extends CI_Controller{
                 "desc_az"  => $desc_az,
                 "desc_ru"  => $desc_ru,
                 "desc_en"  => $desc_en,
+                "upload_date"  => date("Y/m/d"),
             );
 
             $this->Ocean_Model->create_portfolio_name($data);
@@ -817,6 +818,7 @@ class Ocean extends CI_Controller{
                 "desc_az"  => $desc_az,
                 "desc_ru"  => $desc_ru,
                 "desc_en"  => $desc_en,
+                "upload_date"  => date("Y/m/d"),
             );
 
             $this->Ocean_Model->update_portfolio($where, $data);

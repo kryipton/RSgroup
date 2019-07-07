@@ -150,8 +150,22 @@
                                         <li class="dropdown">
                                             <a href="#"><?php echo $this->lang->line("servisler"); ?></a>
                                             <ul>
-                                                <li><a href="services.html">Services</a></li>
-                                                <li><a href="service-details.html">Service Details</a></li>
+                                               <?php foreach ($services as $service) { ?>
+                                                   <li><a href="services.html"><?php
+
+                                                           if ($this->session->userdata("dil") == "az"){
+                                                               echo $service["name_az"];
+                                                           }
+                                                           elseif ($this->session->userdata("dil") == "en"){
+                                                               echo $service["name_en"];
+                                                           }
+                                                           elseif ($this->session->userdata("dil") == "ru"){
+                                                               echo $service["name_ru"];
+                                                           }
+
+
+                                                           ?></a></li>
+                                               <?php }?>
                                             </ul>
                                         </li>
 <!--                                        xidmetler-->
