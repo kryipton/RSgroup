@@ -1,0 +1,119 @@
+.c_dropzone_adds{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.c_tab_pane{
+    max-width: 1700px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.c_tab_pane_portfolio{
+    max-width: 1700px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.c_nav_pills{
+    background-color: lightgrey;
+    height: 40px;
+    max-width: 150px;
+    color: white!important;
+    margin: 0 auto;
+}
+
+.c_about{
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+
+.c_about_submit{
+    float: right;
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    margin-right: 110px;
+    margin-top: 40px;
+}
+
+.c_nav_certificates{
+    background-color: lightgrey;
+    max-width: 337px;
+    height: 40px;
+}
+
+.c_form_services{
+    width: 60%!important;
+    margin: 0 auto;
+}
+
+.c_services_submit{
+    width: 100px;
+    height: 35px;
+    font-size: 15px;
+    float: right;
+}
+
+.c_portfolio_btn{
+    width: 100px;
+    font-size: 16px;
+    float: right;
+    margin-right: 13px;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+.input-container {
+    margin: 10px auto;
+    max-width: 98.5%;
+    background-color: #EDEDED;
+    border: 1px solid #DFDFDF;
+    border-radius: 5px;
+}
+
+input[type='file'] {
+    width: 0!important;
+    height: 0!important;
+}
+
+.file-info {
+    margin-left: 15px;
+    font-size: 0.9em;
+}
+
+.browse-btn {
+    background: #03A595;
+    color: #fff;
+    min-height: 35px;
+    padding: 10px;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.browse-btn:hover {
+    background: #4ec0b4;
+}
+
+@media (max-width: 300px) {
+    button {
+        width: 100%;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 0;
+    }
+
+    .file-info {
+        display: block;
+        margin: 10px 5px;
+    }
+}
+
