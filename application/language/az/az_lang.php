@@ -9,7 +9,13 @@ $lang["portfolio"] = "Portfel";
 $lang["sertifikatlar"] = "Sertifikatlar";
 $lang["servisler"] = "Xidmətlər";
 
+//=======menim hissem=============
 
+$lang["bizkimik"] = "Biz Kimik?";
+$lang["etrafli"] = "Ətraflı";
+$lang["emekdaslarimiz"] = "Əməkdaşlarımız";
+
+//=======menim hissem=============
 
 
 

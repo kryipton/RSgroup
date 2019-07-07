@@ -29,6 +29,31 @@
 <!--slide olan hisse-->
 
 
+<!--  haqqimizda hissesi  -->
+<?php $this->load->view("front/home/about");?>
+<!--  haqqimizda hissesi-->
+
+<div class="news-section c_section_parallax"></div>
+
+<!--servisler olan hisse-->
+<?php $this->load->view("front/home/services");?>
+<!--servisler olan hisse-->
+
+<!--portfolio olan hisse-->
+<?php $this->load->view("front/home/portfolio");?>
+<!--portfolio olan hisse-->
+
+
+<!--portfolio olan hisse-->
+<?php $this->load->view("front/home/brands");?>
+<!--portfolio olan hisse-->
+
+
+
+<!--footer olan hisse-->
+<?php $this->load->view("front/home/footer");?>
+<!--footer olan hisse-->
+
 <!--scriptler-->
 <?php $this->load->view("front/includes_for_whole_pages/scripts");  ?>
 <!--scriptler-->
