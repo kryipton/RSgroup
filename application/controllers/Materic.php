@@ -93,8 +93,9 @@ class Materic extends CI_Controller {
 
 //    =========================Elaqe hissesi=========================================
     public function contact()
-    {
-        $data["services"] = $this->Materic_model->get_services();
+
+    {   $data["services"] = $this->Materic_model->get_services();
+
         $data['contact'] = $this->Materic_model->get_contact();
         $this->load->view('front/contact/whole_page',$data);
     }
@@ -141,5 +142,30 @@ class Materic extends CI_Controller {
     }
 
 //    =========================portfolio hissesi=========================================
+
+
+
+//    =========================Servis hissesi=========================================
+
+    public function single_service($id)
+    {
+        $data["services"] = $this->Materic_model->get_services();
+
+      $data['service'] = $this->Materic_model->get_service([
+          'id' => $id
+      ]);
+      $this->load->view('front/single_service/whole_page',$data);
+    }
+
+
+
+
+//    =========================Servis hissesi=========================================
+
+
+
+
+
+
 
 }

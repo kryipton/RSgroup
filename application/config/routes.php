@@ -292,6 +292,7 @@ $route['(:any)/galery/(.*)'] = 'Materic/galery/$1';
 //----------------------------------------------------Elaqe---------------------------------------
 $route['(:any)/contact'] = 'Materic/contact';
 
+
 //----------------------------------------------------Sertifikatlar---------------------------------------
 $route['(:any)/certificates'] = 'Materic/certificates';
 
@@ -301,6 +302,13 @@ $route['(:any)/portfolio'] = 'Materic/portfolio';
 //----------------------------------------------------Sertifikatlar---------------------------------------
 $route['(:any)/portfolio_single/(.*)'] = 'Materic/portfolio_single/$1/$2';
 
+//----------------------------------------------------Sertfikatlar---------------------------------------
+$route['(:any)/certificates'] = 'Materic/certificates';
+
+//----------------------------------------------------Services---------------------------------------
+
+
+$route['(:any)/service/(.*)'] = 'Materic/single_service/$2/$1';
 
 
 

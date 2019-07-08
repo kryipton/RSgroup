@@ -56,7 +56,10 @@ class Materic_model extends CI_Model{
         return $this->db->get("services")->result_array();
     }
 
-
+    public function get_service($where)
+    {
+        return $this->db->where($where)->get('services')->row_array();
+    }
 
     //    =========================Xidmetler hissesi=========================================
     public function get_certificates()
@@ -68,6 +71,7 @@ class Materic_model extends CI_Model{
     {
         return $this->db->get("certificates_about")->row_array();
     }
+
 
 
 
@@ -93,5 +97,10 @@ class Materic_model extends CI_Model{
     }
 
 
+
+
+    
+    
+    
 
 }
