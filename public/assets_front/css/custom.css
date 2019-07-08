@@ -26,3 +26,14 @@
 .c_owl_item{
     height: 130px!important;
 }
+
+.c_services_title{
+    color: #1f415f;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.c_padding_top_0{
+    padding-top: 0!important;
+}
+

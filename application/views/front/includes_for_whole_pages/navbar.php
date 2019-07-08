@@ -8,14 +8,12 @@
                 <div class="col-lg-4 col-8">
                     <ul class="social-links">
                         <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                         <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
                     </ul>
                 </div>
                 <div class="col-lg-8 col-4">
                     <div class="right-content">
-                        <span class="working-time">Opening Hours : Monday - Saturday 9 am to 5 pm</span>
+                        <span class="working-time">Support@mail.com</span>
                         <div class="language">
                             <a href="#" class="dropdown-btn"><?php echo  $this->lang->line("dil");?><i class="flaticon-down-arrow"></i></a>
                             <ul class="language-dropdown">
@@ -139,7 +137,7 @@
                             <div class="col-lg-12 d-lg-block d-none">
                                 <nav class="main-menu" id="mainMenu">
                                     <ul>
-                                        <!--                                                           ana seyfe -->
+                                        <!--                                        ana seyfe -->
                                         <li >
                                             <a href="<?php
 
@@ -175,12 +173,27 @@
                                         </li>
                                         <!--                                        haqqimizda-->
 
+
                                         <!--                                        xidmetler-->
                                         <li class="dropdown">
                                             <a href="#"><?php echo $this->lang->line("servisler"); ?></a>
                                             <ul>
-                                                <li><a href="services.html">Services</a></li>
-                                                <li><a href="service-details.html">Service Details</a></li>
+                                                <?php foreach ($services as $service) { ?>
+                                                    <li><a href="services.html"><?php
+
+                                                            if ($this->session->userdata("dil") == "az"){
+                                                                echo $service["name_az"];
+                                                            }
+                                                            elseif ($this->session->userdata("dil") == "en"){
+                                                                echo $service["name_en"];
+                                                            }
+                                                            elseif ($this->session->userdata("dil") == "ru"){
+                                                                echo $service["name_ru"];
+                                                            }
+
+
+                                                            ?></a></li>
+                                                <?php }?>
                                             </ul>
                                         </li>
                                         <!--                                        xidmetler-->
@@ -188,7 +201,19 @@
 
                                         <!--                                        sertifikatlar-->
                                         <li>
-                                            <a href="#"><?php echo $this->lang->line("sertifikatlar"); ?></a>
+                                            <a href="<?php
+
+                                            if ($this->session->userdata("dil") == "az"){
+                                                echo base_url('az/certificates');
+                                            }
+                                            elseif ($this->session->userdata("dil") == "en"){
+                                                echo base_url('en/certificates');
+                                            }
+                                            elseif ($this->session->userdata("dil") == "ru"){
+                                                echo base_url('ru/certificates');
+                                            }
+
+                                            ?>"><?php echo $this->lang->line("sertifikatlar"); ?></a>
                                         </li>
                                         <!--                                        sertifikatlar-->
 

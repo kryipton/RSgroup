@@ -4,8 +4,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Materic extends CI_Controller {
     public function __construct()
     {
-
-
         parent::__construct();
         $dil = $this->uri->segment(1);
         if ($dil == ""){
@@ -13,8 +11,6 @@ class Materic extends CI_Controller {
         }
         $this->lang->load($dil, $dil);
         $this->session->set_userdata("dil", $dil);
-
-
 
         $this->load->model('Materic_model');
     }
@@ -35,7 +31,7 @@ class Materic extends CI_Controller {
 
 //    =========================Haqqimizda  hissesi=========================================
 	public function about(){
-
+        $data["services"] = $this->Materic_model->get_services();
         $data['about_text'] = $this->Materic_model->get_about();
 	    $this->load->view("front/about/whole_page",$data);
     }
@@ -99,6 +95,18 @@ class Materic extends CI_Controller {
         $this->load->view('front/contact/whole_page',$data);
     }
 //    =========================Elaqe hissesi=========================================
+
+
+//    =========================Elaqe hissesi=========================================
+    public function certificates()
+    {
+        $data["services"] = $this->Materic_model->get_services();
+        $data['certificates_gallery'] = $this->Materic_model->get_certificates();
+        $data['certificates_about'] = $this->Materic_model->get_certificates_about();
+        $this->load->view('front/certificates/certificates',$data);
+    }
+//    =========================Elaqe hissesi=========================================
+
 
 
 }

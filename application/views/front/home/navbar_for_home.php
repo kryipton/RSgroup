@@ -21,9 +21,7 @@
                     <div class="right-content">
                         <ul class="social-links">
                             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                             <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
                         </ul>
                         <div class="language">
                             <a href="#" class="dropdown-btn"><?php echo  $this->lang->line("dil");?><i class="flaticon-down-arrow"></i></a>

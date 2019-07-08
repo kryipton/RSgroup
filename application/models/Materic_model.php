@@ -57,4 +57,17 @@ class Materic_model extends CI_Model{
     }
 
 
+
+    //    =========================Xidmetler hissesi=========================================
+    public function get_certificates()
+    {
+        return $this->db->order_by("rank")->where("status", 1)->get("certificates")->result_array();
+    }
+
+    public function get_certificates_about()
+    {
+        return $this->db->get("certificates_about")->row_array();
+    }
+
+
 }
