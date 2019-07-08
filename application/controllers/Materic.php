@@ -81,7 +81,8 @@ class Materic extends CI_Controller {
 
         $page = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
 
-        $data['photos']   = $this->Materic_model->get_gallery($config["per_page"], $page);
+        $data['photos']   = $this->Materic_model->get_gallery($config["per_page"], $page,['status'=>1]);
+
         $data['links']  = $this->pagination->create_links();
         $this->load->view('front/galery/whole_page',$data);
     }

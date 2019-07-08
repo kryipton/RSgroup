@@ -23,7 +23,7 @@
 <div class="gallery-section blog-grid">
     <div class="container">
         <div class="row">
-            <?php foreach ($photos as $photo) {?>
+            <?php foreach ($photos as $photo) {  ?>
             <div class="col-lg-4 col-md-6">
                 <div class="single-pic wow fadeInRight" data-wow-duration="1.5s">
                     <img src="<?php echo base_url('uploads/gallery/'.$photo['name'])?>" alt="">
@@ -39,7 +39,7 @@
                     </div>
                 </div>
             </div>
-            <?php } ?>
+            <?php }?>
         </div>
 
 
