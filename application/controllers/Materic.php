@@ -42,6 +42,7 @@ class Materic extends CI_Controller {
     public function galery()
     {
         $data["services"] = $this->Materic_model->get_services();
+
         $this->load->library('pagination');
 
         $config["base_url"]    = base_url($this->uri->segment(1) . "/galery");
@@ -92,6 +93,7 @@ class Materic extends CI_Controller {
 
 //    =========================Elaqe hissesi=========================================
     public function contact()
+
     {   $data["services"] = $this->Materic_model->get_services();
 
         $data['contact'] = $this->Materic_model->get_contact();
