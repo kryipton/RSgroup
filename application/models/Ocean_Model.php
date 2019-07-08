@@ -167,6 +167,10 @@ class Ocean_Model extends CI_Model {
         $this->db->where($where)->delete("portfolio");
     }
 
+    public function delete_portfolio_gallery_portfolio_id($where){
+        $this->db->where($where)->delete("portfolio_gallery");
+    }
+
 
 //    ----------------------------portfolio galereya hissesi---------------------------------
     public function get_single_portfolio_gallery($where){

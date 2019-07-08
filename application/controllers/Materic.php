@@ -100,7 +100,7 @@ class Materic extends CI_Controller {
 //    =========================Elaqe hissesi=========================================
 
 
-//    =========================Elaqe hissesi=========================================
+//    =========================sertifikatlar hissesi=========================================
     public function certificates()
     {
         $data["services"] = $this->Materic_model->get_services();
@@ -108,9 +108,38 @@ class Materic extends CI_Controller {
         $data['certificates_about'] = $this->Materic_model->get_certificates_about();
         $this->load->view('front/certificates/certificates',$data);
     }
-//    =========================Elaqe hissesi=========================================
+//    =========================sertifikatlar hissesi=========================================
 
 
+
+//    =========================portfolio hissesi=========================================
+    public function portfolio()
+    {
+        $data["services"] = $this->Materic_model->get_services();
+        $data['portfolio_gallery'] = $this->Materic_model->get_portfolio();
+        $data['portfolio_about'] = $this->Materic_model->get_portfolio_about();
+        $this->load->view('front/portfolio/portfolio_list',$data);
+    }
+
+
+    public function portfolio_single($dil, $id)
+    {
+
+
+        $data["services"] = $this->Materic_model->get_services();
+        $data['portfolio_gallery'] = $this->Materic_model->get_portfolio_single(array(
+            "status" => 1,
+            "portfolio_id" => $id,
+        ));
+
+        $data['portfolio_about'] = $this->Materic_model->get_portfolio_about_single(array(
+            "id" => $id,
+        ));
+
+        $this->load->view('front/portfolio/portfolio_single',$data);
+    }
+
+//    =========================portfolio hissesi=========================================
 
 
 

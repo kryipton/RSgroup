@@ -31,6 +31,10 @@
 
     <link rel="stylesheet" href="<?php echo base_url("public/assets_front")?>/css/lightbox.min.css">
 
+    <link rel="stylesheet" href="<?php echo base_url("public/assets_front")?>/css/slick.css">
+
+    <link rel="stylesheet" href="<?php echo base_url("public/assets_front")?>/css/slick-theme.css">
+
 
 
 

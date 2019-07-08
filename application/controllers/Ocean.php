@@ -841,6 +841,11 @@ class Ocean extends CI_Controller{
         $this->Ocean_Model->delete_portfolio(array(
             "id" => $id,
         ));
+
+        $this->Ocean_Model->delete_portfolio_gallery_portfolio_id(array(
+            "portfolio_id" => $id,
+        ));
+
         $this->session->set_flashdata("portfolio_success", "$id nömrəli portfolio silindi");
         redirect(base_url("ocean_portfolio"));
     }
