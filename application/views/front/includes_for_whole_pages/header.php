@@ -29,6 +29,8 @@
     <!-- responsive css -->
     <link rel="stylesheet" href="<?php echo base_url("public/assets_front")?>/css/responsive.css">
 
+    <link rel="stylesheet" href="<?php echo base_url("public/assets_front")?>/css/lightbox.min.css">
+
 
 
 

@@ -288,10 +288,12 @@ $route['(:any)/home'] =  'Materic/index';
 $route['(:any)/about'] = 'Materic/about';
 //----------------------------------------------------Gallery---------------------------------------
 $route['(:any)/galery'] = 'Materic/galery';
+$route['(:any)/galery/(.*)'] = 'Materic/galery/$1';
 //----------------------------------------------------Elaqe---------------------------------------
 $route['(:any)/contact'] = 'Materic/contact';
 
-
+//----------------------------------------------------Elaqe---------------------------------------
+$route['(:any)/certificates'] = 'Materic/certificates';
 
 
 
