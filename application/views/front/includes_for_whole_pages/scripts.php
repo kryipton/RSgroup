@@ -18,6 +18,10 @@
 
 <script src="<?php echo base_url("public/assets_front")?>/js/lightbox.min.js"></script>
 
+<script src="<?php echo base_url("public/assets_front")?>/js/slick.min.js"></script>
+
+<script src="<?php echo base_url("public/assets_front")?>/js/jquery-migrate-1.2.1.min.js"></script>
+
 </body>
 
 </html>

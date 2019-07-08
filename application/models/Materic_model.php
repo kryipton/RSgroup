@@ -70,4 +70,28 @@ class Materic_model extends CI_Model{
     }
 
 
+
+    //    =========================Portfolio hissesi=========================================
+    public function get_portfolio()
+    {
+        return $this->db->where("is_primary", 1)->get("portfolio_gallery")->result_array();
+    }
+
+    public function get_portfolio_about()
+    {
+        return $this->db->get("portfolio")->result_array();
+    }
+
+    public function get_portfolio_single($where)
+    {
+        return $this->db->where($where)->get("portfolio_gallery")->result_array();
+    }
+
+    public function get_portfolio_about_single($where)
+    {
+        return $this->db->where($where)->get("portfolio")->row_array();
+    }
+
+
+
 }
