@@ -179,7 +179,21 @@
                                             <a href="#"><?php echo $this->lang->line("servisler"); ?></a>
                                             <ul>
                                                 <?php foreach ($services as $service) { ?>
-                                                    <li><a href="services.html"><?php
+                                                    <li><a href="<?php
+
+                                                        if ($this->session->userdata("dil") == "az"){
+                                                            echo base_url('az/service/'.$service['id']);
+                                                        }
+                                                        elseif ($this->session->userdata("dil") == "en"){
+                                                            echo base_url('en/service/'.$service['id']);
+                                                        }
+                                                        elseif ($this->session->userdata("dil") == "ru"){
+                                                            echo base_url('ru/service/'.$service['id']);
+                                                        }
+
+                                                        ?>">
+
+                                                            <?php
 
                                                             if ($this->session->userdata("dil") == "az"){
                                                                 echo $service["name_az"];
