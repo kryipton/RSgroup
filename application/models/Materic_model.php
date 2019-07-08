@@ -50,7 +50,7 @@ class Materic_model extends CI_Model{
     }
 
 
-//    =========================Xidmetler hissesi=========================================
+//    =========================Servisler hissesi=========================================
     public function get_services()
     {
         return $this->db->get("services")->result_array();

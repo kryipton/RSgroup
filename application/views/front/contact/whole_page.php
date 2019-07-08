@@ -84,7 +84,7 @@
 
     <!--Google map-->
     <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1519.6696934478366!2d49.845962389535345!3d40.37917012508677!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307da7a06b402f%3A0xd8897cf79ec36111!2s28+MALL!5e0!3m2!1saz!2s!4v1561924823535!5m2!1saz!2s" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1519.6696934478366!2d49.845962389535345!3d40.37917012508677!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307da7a06b402f%3A0xd8897cf79ec36111!2s28+MALL!5e0!3m2!1saz!2s!4v1561924823535!5m2!1saz!2s" width="200" height="50" frameborder="0" style="border:0" ></iframe>
     </div>
 
     <!--Google Maps-->

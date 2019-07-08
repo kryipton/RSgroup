@@ -92,6 +92,7 @@ class Materic extends CI_Controller {
 //    =========================Elaqe hissesi=========================================
     public function contact()
     {
+        $data["services"] = $this->Materic_model->get_services();
         $data['contact'] = $this->Materic_model->get_contact();
         $this->load->view('front/contact/whole_page',$data);
     }
