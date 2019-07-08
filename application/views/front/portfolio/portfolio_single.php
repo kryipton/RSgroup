@@ -48,7 +48,7 @@
                     <h2 class="blog-details-title">
                         <?php
 
-                        if ($this->session->userdata("dil") == "az"){                                                        echo $portfolio_about[$x]["name_ru"];
+                        if ($this->session->userdata("dil") == "az"){   echo $portfolio_about["name_ru"];
                             echo $portfolio_about["name_az"];
                         }elseif ($this->session->userdata("dil") == "en"){
                             echo $portfolio_about["name_en"];
@@ -63,7 +63,7 @@
                     <div class="blog-details-body">
                         <?php
 
-                        if ($this->session->userdata("dil") == "az"){                                                        echo $portfolio_about[$x]["name_ru"];
+                        if ($this->session->userdata("dil") == "az"){   echo $portfolio_about["name_ru"];
                             echo $portfolio_about["desc_az"];
                         }elseif ($this->session->userdata("dil") == "en"){
                             echo $portfolio_about["desc_en"];
@@ -71,7 +71,7 @@
                             echo $portfolio_about["desc_ru"];
                         }
 
-                      ?>
+                        ?>
                     </div>
                 </div>
             </div>

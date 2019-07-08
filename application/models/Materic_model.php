@@ -81,9 +81,14 @@ class Materic_model extends CI_Model{
         return $this->db->where("is_primary", 1)->get("portfolio_gallery")->result_array();
     }
 
-    public function get_portfolio_about()
+    public function get_portfolio_about($limit, $count)
     {
-        return $this->db->get("portfolio")->result_array();
+        return $this->db->limit($limit, $count)->get("portfolio")->result_array();
+    }
+
+    public function get_portfolio_counts()
+    {
+        return $this->db->count_all('portfolio');
     }
 
     public function get_portfolio_single($where)
