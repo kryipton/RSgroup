@@ -416,6 +416,8 @@ class Ocean extends CI_Controller{
         $az = $this->input->post("contact_editor1");
         $ru = $this->input->post("contact_editor2");
         $en = $this->input->post("contact_editor3");
+        $mail = $this->input->post("contact_editor4");
+        $phone = $this->input->post("contact_editor5");
 
 
 //        eger bos deyillerse databse e yukle
@@ -424,6 +426,8 @@ class Ocean extends CI_Controller{
                 "desc_az" => $az,
                 "desc_ru" => $ru,
                 "desc_en" => $en,
+                "mail" => $mail,
+                "phone" => $phone,
             ));
             $this->session->set_flashdata("contact_success", "Əlaqə bölməsi yeniləndi");
             redirect(base_url("admin_contact"));
