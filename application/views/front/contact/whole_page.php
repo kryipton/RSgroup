@@ -93,7 +93,9 @@
 
 
 
-
+<!--footer olan hisse-->
+<?php $this->load->view("front/includes_for_whole_pages/footer");?>
+<!--footer olan hisse-->
 
 
 

@@ -12,6 +12,8 @@
         <li class="active"><a data-toggle="pill" href="#az">AZ</a></li>
         <li><a data-toggle="pill" href="#ru">RU</a></li>
         <li><a data-toggle="pill" href="#en">EN</a></li>
+        <li><a data-toggle="pill" href="#mail">Mail</a></li>
+        <li><a data-toggle="pill" href="#phone">Phone</a></li>
     </ul>
     <!--az rus ve en dillerinin navbar linki-->
 
@@ -36,6 +38,18 @@
         <div id="en" class="c_tab_pane tab-pane fade">
         <textarea id="editor1" name="contact_editor3">
             <?php echo $contact["desc_en"] ?>
+        </textarea>
+        </div>
+
+        <div id="mail" class="c_tab_pane tab-pane fade">
+        <textarea id="editor1" name="contact_editor4">
+            <?php echo $contact["mail"] ?>
+        </textarea>
+        </div>
+
+        <div id="phone" class="c_tab_pane tab-pane fade">
+        <textarea id="editor1" name="contact_editor5">
+            <?php echo $contact["phone"] ?>
         </textarea>
         </div>
     </div>
@@ -101,6 +115,25 @@
 
 
     CKEDITOR.replace( 'contact_editor3', {
+        filebrowserBrowseUrl: '<?php echo base_url("public/assets_for_admin/javascripts")?>/CKfinder/ckfinder.html',
+        filebrowserUploadUrl: '<?php echo base_url("admin_contact_image_upload")?>'
+
+        // filebrowserBrowseUrl: '/ckfinder/ckfinder.html',
+        // filebrowserUploadUrl: '/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
+
+    });
+
+    CKEDITOR.replace( 'contact_editor4', {
+        filebrowserBrowseUrl: '<?php echo base_url("public/assets_for_admin/javascripts")?>/CKfinder/ckfinder.html',
+        filebrowserUploadUrl: '<?php echo base_url("admin_contact_image_upload")?>'
+
+        // filebrowserBrowseUrl: '/ckfinder/ckfinder.html',
+        // filebrowserUploadUrl: '/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
+
+    });
+
+
+    CKEDITOR.replace( 'contact_editor5', {
         filebrowserBrowseUrl: '<?php echo base_url("public/assets_for_admin/javascripts")?>/CKfinder/ckfinder.html',
         filebrowserUploadUrl: '<?php echo base_url("admin_contact_image_upload")?>'
 

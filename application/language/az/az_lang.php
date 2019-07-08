@@ -8,6 +8,8 @@ $lang["elaqe"] = "Əlaqə";
 $lang["portfolio"] = "Portfel";
 $lang["sertifikatlar"] = "Sertifikatlar";
 $lang["servisler"] = "Xidmətlər";
+$lang["linkler"] = "Əhəmiyyətli Linklər";
+$lang["huquqlar"] = "© Müəllif hüquqları 2019 RSgroup. Bütün hüquqlar qorunur.";
 
 //=======menim hissem=============
 
