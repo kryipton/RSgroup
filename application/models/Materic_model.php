@@ -23,9 +23,9 @@ class Materic_model extends CI_Model{
 
 
 //    =========================Gallery hissesi=========================================
-    public function get_gallery($limit, $count)
+    public function get_gallery($limit, $count,$where)
     {
-        return $this->db->limit($limit, $count)->get('gallery')->result_array();
+        return $this->db->limit($limit, $count)->where($where)->order_by("rank", "ASC")->get('gallery')->result_array();
     }
 
     public function get_gallery_counts()
