@@ -2,30 +2,31 @@
 class Materic_model extends CI_Model{
 
 
-//    =========================About hissesi=========================================
+    //    =========================About hissesi=========================================
     public function get_about()
     {
         return $this->db->get("about")->row_array();
     }
 
-
-//    =========================About hissesi=========================================
+    //    =========================Portfolio hissesi=========================================
     public function get_portfolio_limit()
     {
         return $this->db->limit(6)->order_by("id", "DESC")->get("portfolio")->result_array();
     }
-
     public function get_portfolio_gallery_limit()
     {
         return $this->db->limit(6)->order_by("portfolio_id", "DESC")->where("is_primary", 1)->get("portfolio_gallery")->result_array();
     }
 
 
-
-//    =========================Gallery hissesi=========================================
-    public function get_gallery()
+    //    =========================Gallery hissesi=========================================
+    public function get_gallery($limit, $count)
     {
-        return $this->db->get("gallery")->result_array();
+        return $this->db->limit($limit, $count)->get('gallery')->result_array();
+    }
+    public function get_gallery_counts()
+    {
+        return $this->db->count_all('gallery');
     }
 
 
@@ -44,12 +45,11 @@ class Materic_model extends CI_Model{
         return $this->db->get("sponsors")->result_array();
     }
 
+    
 
 //    =========================Xidmetler hissesi=========================================
     public function get_services()
     {
         return $this->db->get("services")->result_array();
     }
-
-
 }
