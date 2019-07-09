@@ -90,11 +90,36 @@
                 <div class="col-xl-2 col-lg-2">
                     <h4><?php echo $this->lang->line("servisler"); ?></h4>
                     <ul class="userful-links">
-                        <li><a href="#">Air Freight</a></li>
-                        <li><a href="#">OCEAN Freight</a></li>
-                        <li><a href="#">WAREHOUSING</a></li>
-                        <li><a href="#">STORAGE</a></li>
-                        <li><a href="#">ROAD Freight</a></li>
+                        <?php foreach ($services as $service) { ?>
+                            <li><a href="<?php
+
+                                if ($this->session->userdata("dil") == "az"){
+                                    echo base_url('az/service/'.$service['id']);
+                                }
+                                elseif ($this->session->userdata("dil") == "en"){
+                                    echo base_url('en/service/'.$service['id']);
+                                }
+                                elseif ($this->session->userdata("dil") == "ru"){
+                                    echo base_url('ru/service/'.$service['id']);
+                                }
+
+                                ?>">
+
+                                    <?php
+
+                                    if ($this->session->userdata("dil") == "az"){
+                                        echo $service["name_az"];
+                                    }
+                                    elseif ($this->session->userdata("dil") == "en"){
+                                        echo $service["name_en"];
+                                    }
+                                    elseif ($this->session->userdata("dil") == "ru"){
+                                        echo $service["name_ru"];
+                                    }
+
+
+                                    ?></a></li>
+                        <?php }?>
                     </ul>
                 </div>
                 <div class="col-xl-3 col-lg-4">
@@ -102,15 +127,25 @@
                     <div class="footer-contact">
                         <div class="contact-info">
                             <div class="icon-wrapper"><i class="flaticon-placeholder"></i></div>
-                            <p>143 castle road 517 district, kiyev port south Canada</p>
+                            <p> <?php
+                                if ($this->session->userdata("dil") == "az"){
+                                    echo $contact['desc_az'];
+                                }
+                                elseif ($this->session->userdata("dil") == "en"){
+                                    echo $contact['desc_en'];
+                                }
+                                elseif ($this->session->userdata("dil") == "ru"){
+                                    echo $contact['desc_ru'];
+                                }
+                                ?></p>
                         </div>
                         <div class="contact-info">
                             <div class="icon-wrapper"><i class="flaticon-call"></i></div>
-                            <p>+00 12 123 4567</p>
+                            <p> <?php  echo $contact['phone']; ?></p>
                         </div>
                         <div class="contact-info">
                             <div class="icon-wrapper"><i class="flaticon-email"></i></div>
-                            <p>Info@yourmail.com</p>
+                            <p> <?php  echo $contact['mail']; ?></p>
                         </div>
                     </div>
                 </div>

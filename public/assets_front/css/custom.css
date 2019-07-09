@@ -73,7 +73,10 @@
 }
 
 .c_info_txt{
-    margin-top:10px;
+    margin-top:10px!important;
+}
+.c_info_txt2{
+    margin-top:14px!important;
 }
 
 .c_about_area{

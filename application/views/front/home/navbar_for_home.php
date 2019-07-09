@@ -9,11 +9,11 @@
                     <div class="contact-infos">
                         <div class="email">
                             <div class="icon-wrapper"><i class="flaticon-call"></i></div>
-                            <div>+ 00 12 123 456</div>
+                            <div><?php  echo $contact['phone']; ?></div>
                         </div>
                         <div class="phone">
                             <div class="icon-wrapper"><i class="flaticon-email"></i></div>
-                            <div>Support@mail.com</div>
+                            <div><?php  echo $contact['mail']; ?></div>
                         </div>
                     </div>
                 </div>

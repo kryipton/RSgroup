@@ -22,6 +22,7 @@ class Materic extends CI_Controller {
 	    $data["portfolio_gallery"] = $this->Materic_model->get_portfolio_gallery_limit();
         $data["brands"] = $this->Materic_model->get_brands();
         $data["services"] = $this->Materic_model->get_services();
+        $data['contact'] = $this->Materic_model->get_contact();
 
 
         $this->load->view('front/home/whole_page', $data);
@@ -32,6 +33,8 @@ class Materic extends CI_Controller {
 //    =========================Haqqimizda  hissesi=========================================
 	public function about(){
         $data["services"] = $this->Materic_model->get_services();
+        $data['contact'] = $this->Materic_model->get_contact();
+
         $data['about_text'] = $this->Materic_model->get_about();
 	    $this->load->view("front/about/whole_page",$data);
     }
@@ -42,6 +45,8 @@ class Materic extends CI_Controller {
     public function galery()
     {
         $data["services"] = $this->Materic_model->get_services();
+        $data['contact'] = $this->Materic_model->get_contact();
+
 
         $this->load->library('pagination');
 
@@ -106,6 +111,9 @@ class Materic extends CI_Controller {
     public function certificates()
     {
         $data["services"] = $this->Materic_model->get_services();
+        $data['contact'] = $this->Materic_model->get_contact();
+
+
         $data['certificates_gallery'] = $this->Materic_model->get_certificates();
         $data['certificates_about'] = $this->Materic_model->get_certificates_about();
         $this->load->view('front/certificates/certificates',$data);
@@ -118,6 +126,7 @@ class Materic extends CI_Controller {
     public function portfolio()
     {
         $data["services"] = $this->Materic_model->get_services();
+        $data['contact'] = $this->Materic_model->get_contact();
 //--------------pagination start------------
         $this->load->library('pagination');
 
@@ -175,6 +184,8 @@ class Materic extends CI_Controller {
 
 
         $data["services"] = $this->Materic_model->get_services();
+        $data['contact'] = $this->Materic_model->get_contact();
+
         $data['portfolio_gallery'] = $this->Materic_model->get_portfolio_single(array(
             "status" => 1,
             "portfolio_id" => $id,
@@ -196,6 +207,7 @@ class Materic extends CI_Controller {
     public function single_service($id)
     {
         $data["services"] = $this->Materic_model->get_services();
+        $data['contact'] = $this->Materic_model->get_contact();
 
       $data['service'] = $this->Materic_model->get_service([
           'id' => $id
