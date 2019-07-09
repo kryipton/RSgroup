@@ -44,8 +44,8 @@
             <div class="row no-gutters">
                 <div class="col-lg-4 single-info-col">
                     <div class="single-info wow fadeInRight" data-wow-duration="1s">
-                        <div class="icon-wrapper"><i class="fas fa-home"></i></div>
-                        <div class="info-txt">
+                        <div class="icon-wrapper"><i class="c_info_txt2 fas fa-home"></i></div>
+                        <div class="info-txt c_info_txt">
                             <?php
                             if ($this->session->userdata("dil") == "az"){
                                 echo $contact['desc_az'];
@@ -70,8 +70,8 @@
                 </div>
                 <div class="col-lg-4 single-info-col">
                     <div class="single-info wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s">
-                        <div class="icon-wrapper"><i class="far fa-envelope"></i></div>
-                        <div class="info-txt">
+                        <div class="icon-wrapper"><i class="c_info_txt2 far fa-envelope"></i></div>
+                        <div class="info-txt c_info_txt">
                             <?php  echo $contact['mail']; ?>
                         </div>
                     </div>

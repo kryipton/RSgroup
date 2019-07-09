@@ -96,35 +96,35 @@
 <!--                sag teref-->
                 <div class="col-lg-9 col-6 position-lg-relative position-static">
 
-<!--                   elaqe ve mail hissesi-->
-                    <div class="support-bar">
-                        <div class="row">
-                            <div class="offset-xl-4 col-xl-8 offset-2 col-10">
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <div class="support-info">
-                                            <div class="left-content"><i class="flaticon-call"></i></div>
-                                            <div class="right-content">
-                                                <div class="right-content-inner">
-                                                    <h5>Free Call</h5>
-                                                    <p>+ 00 12 123 456</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <div class="support-info">
-                                            <div class="left-content"><i class="flaticon-email"></i></div>
-                                            <div class="right-content">
-                                                <h5>Mail us</h5>
-                                                <p>Support@mail.com </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+<!--                 elaqe ve mail hissesi-->
+<!--                    <div class="support-bar">-->
+<!--                        <div class="row">-->
+<!--                            <div class="offset-xl-4 col-xl-8 offset-2 col-10">-->
+<!--                                <div class="row">-->
+<!--                                    <div class="col-lg-4">-->
+<!--                                        <div class="support-info">-->
+<!--                                            <div class="left-content"><i class="flaticon-call"></i></div>-->
+<!--                                            <div class="right-content">-->
+<!--                                                <div class="right-content-inner">-->
+<!--                                                    <h5>Free Call</h5>-->
+<!--                                                    <p>+ 00 12 123 456</p>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    <div class="col-lg-4">-->
+<!--                                        <div class="support-info">-->
+<!--                                            <div class="left-content"><i class="flaticon-email"></i></div>-->
+<!--                                            <div class="right-content">-->
+<!--                                                <h5>Mail us</h5>-->
+<!--                                                <p>Support@mail.com </p>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
 <!--                   elaqe ve mail hissesi-->
 
 
