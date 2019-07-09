@@ -23,21 +23,21 @@
 
     <!--az rus ve en dillerinin editorlarinin olduqu div-->
     <div class="tab-content">
-        <div id="az" class="c_tab_pane tab-pane fade in active">
-        <textarea id="editor1" name="editor1">
+        <div id="az" class="c_tab_pane_for_editor c_tab_pane tab-pane fade in active">
+        <textarea class="c_editor" id="editor1" name="editor1">
             <?php echo $about["desc_az"] ?>
         </textarea>
         </div>
 
 
-        <div id="ru" class="c_tab_pane tab-pane fade">
+        <div id="ru" class="c_tab_pane_for_editor c_tab_pane tab-pane fade">
         <textarea id="editor1" name="editor2">
             <?php echo $about["desc_ru"] ?>
         </textarea>
         </div>
 
 
-        <div id="en" class="c_tab_pane tab-pane fade">
+        <div id="en" class="c_tab_pane_for_editor c_tab_pane tab-pane fade">
         <textarea id="editor1" name="editor3">
             <?php echo $about["desc_en"] ?>
         </textarea>
@@ -83,9 +83,12 @@
 
 <!--text editorun islemesi ucun ozel script icinde php kodlari var js faylinda islemeyecek-->
 <script>
-    CKEDITOR.replace( 'editor1', {
+
+     CKEDITOR.replace( 'editor1', {
         filebrowserBrowseUrl: '<?php echo base_url("public/assets_for_admin/javascripts")?>/CKfinder/ckfinder.html',
-        filebrowserUploadUrl: '<?php echo base_url("admin_about_image_upload")?>'
+        filebrowserUploadUrl: '<?php echo base_url("admin_about_image_upload")?>',
+        width: 1200,
+        height: 400,
 
         // filebrowserBrowseUrl: '/ckfinder/ckfinder.html',
         // filebrowserUploadUrl: '/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
@@ -93,10 +96,12 @@
     });
 
 
+
+
     CKEDITOR.replace( 'editor2', {
         filebrowserBrowseUrl: '<?php echo base_url("public/assets_for_admin/javascripts")?>/CKfinder/ckfinder.html',
-        filebrowserUploadUrl: '<?php echo base_url("admin_about_image_upload")?>'
-
+        filebrowserUploadUrl: '<?php echo base_url("admin_about_image_upload")?>',
+        height: 400,
         // filebrowserBrowseUrl: '/ckfinder/ckfinder.html',
         // filebrowserUploadUrl: '/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
 
@@ -106,8 +111,8 @@
 
     CKEDITOR.replace( 'editor3', {
         filebrowserBrowseUrl: '<?php echo base_url("public/assets_for_admin/javascripts")?>/CKfinder/ckfinder.html',
-        filebrowserUploadUrl: '<?php echo base_url("admin_about_image_upload")?>'
-
+        filebrowserUploadUrl: '<?php echo base_url("admin_about_image_upload")?>',
+        height: 400,
         // filebrowserBrowseUrl: '/ckfinder/ckfinder.html',
         // filebrowserUploadUrl: '/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
 

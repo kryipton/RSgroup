@@ -22,22 +22,22 @@
 <!--  about section start  -->
 <div class="about-section about">
     <div class="container">
-        <div class="row">
+        <div class="services">
 
             <?php
 
+
             if ($this->session->userdata("dil") == "az"){
-                echo $about_text['desc_az'];
-            }elseif ($this->session->userdata("dil") == "en"){
-                echo $about_text['desc_en'];
-            }elseif ($this->session->userdata("dil") == "ru"){
-                echo $about_text['desc_ru'];
+                echo $about_text["desc_az"];
+            }
+            elseif ($this->session->userdata("dil") == "en"){
+                echo $about_text["desc_en"];
+            }
+            elseif ($this->session->userdata("dil") == "ru"){
+                echo $about_text["desc_ru"];
             }
 
-
             ?>
-
-
 
         </div>
 
