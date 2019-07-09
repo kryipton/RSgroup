@@ -29,19 +29,19 @@
             <div class="col-xl-12 col-lg-12">
                 <div class="service-details-content">
                     <div class="service-details-desc">
-                        <h2 class="title"><?php
-
-                            if ($this->session->userdata("dil") == "az"){
-                                echo $service['name_az'] ;
-                            }
-                            elseif ($this->session->userdata("dil") == "en"){
-                                echo $service['name_en'];
-                            }
-                            elseif ($this->session->userdata("dil") == "ru"){
-                                echo $service['name_ru'];
-                            }
-
-                            ?></h2>
+<!--                        <h2 class="title">--><?php
+//
+//                            if ($this->session->userdata("dil") == "az"){
+//                                echo $service['name_az'] ;
+//                            }
+//                            elseif ($this->session->userdata("dil") == "en"){
+//                                echo $service['name_en'];
+//                            }
+//                            elseif ($this->session->userdata("dil") == "ru"){
+//                                echo $service['name_ru'];
+//                            }
+//
+//                            ?><!--</h2>-->
                         <?php
 
                         if ($this->session->userdata("dil") == "az") {

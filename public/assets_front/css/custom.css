@@ -63,7 +63,7 @@
     position: relative;
 }
 
-.icon-wrapper i{
+.c_wrapper i{
     position: absolute;
     top: 45%;
     left: 50%;
@@ -72,6 +72,16 @@
     margin: -15% 0 0 -25%;
 }
 
-.info-txt{
+.c_info_txt{
     margin-top:10px;
 }
+
+.c_about_area{
+    max-width: 1200px;
+    display: inline-block;
+    margin: 0 auto;
+    min-height: 1px;
+    /*background-color: red;*/
+    /*text-overflow: ellipsis; !* uzunsa sonuna üç nokta koy. *!*/
+}
+

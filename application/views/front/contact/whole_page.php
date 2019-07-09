@@ -62,8 +62,8 @@
                 </div>
                 <div class="col-lg-4 single-info-col">
                     <div class="single-info wow fadeInRight" data-wow-duration="1s" data-wow-delay=".2s">
-                        <div class="icon-wrapper"><i class="fas fa-phone"></i></div>
-                        <div class="info-txt">
+                        <div class="icon-wrapper c_wrapper"><i class="fas fa-phone"></i></div>
+                        <div class="info-txt c_info_txt">
                             <?php  echo $contact['phone']; ?>
                         </div>
                     </div>

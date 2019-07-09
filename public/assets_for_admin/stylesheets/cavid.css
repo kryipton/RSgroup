@@ -117,3 +117,7 @@ input[type='file'] {
     }
 }
 
+
+.c_tab_pane_for_editor{
+    max-width: 1200px!important;
+}

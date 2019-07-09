@@ -164,7 +164,7 @@ class Materic extends CI_Controller {
         $data['links']  = $this->pagination->create_links();
 //--------------pagination end------------
 
-        $data['portfolio_gallery'] = $this->Materic_model->get_portfolio();
+        $data['portfolio_gallery'] = $this->Materic_model->get_portfolio($config["per_page"], $page);
 
         $this->load->view('front/portfolio/portfolio_list',$data);
     }

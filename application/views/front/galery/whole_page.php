@@ -55,6 +55,9 @@
 </div>
 <!--    Gallery section end   -->
 
+
+
+
 <!--footer olan hisse-->
 <?php $this->load->view("front/includes_for_whole_pages/footer");?>
 <!--footer olan hisse-->
@@ -65,3 +68,9 @@
 <?php $this->load->view("front/includes_for_whole_pages/scripts");  ?>
 <!--scriptler-->
 
+<script>
+    lightbox.option({
+        'maxWidth': 1000,
+        'maxHeight': 800,
+    })
+</script>
