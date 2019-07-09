@@ -118,8 +118,54 @@ class Materic extends CI_Controller {
     public function portfolio()
     {
         $data["services"] = $this->Materic_model->get_services();
+//--------------pagination start------------
+        $this->load->library('pagination');
+
+        $config["base_url"]    = base_url($this->uri->segment(1) . "/portfolio");
+        $config["total_rows"]  = $this->Materic_model->get_portfolio_counts();
+        $config["uri_segment"] = 3;
+        $config["per_page"]    = 9;
+
+        $config["num_links"] = 4;
+        $config['full_tag_open']    = "<ul class='pagination justify-content-center'>";
+        $config['full_tag_close']   = "</ul>";
+
+
+        $config['first_link'] = '<i class="fas fa-chevron-circle-left"></i>';
+        $config['first_tag_open'] = '<li class="page-item">';
+        $config['first_tag_close'] = '</li>';
+
+        $config['last_link'] = '<i class="fas fa-chevron-circle-right"></i>';
+        $config['last_tag_open'] = '<li class="page-item">';
+        $config['last_tag_close'] = '</li>';
+
+        $config['next_link'] = '<i class="fas fa-chevron-right"></i>';
+        $config['next_tag_open'] = '<li class="page-item">';
+        $config['next_tag_close'] = '</li>';
+
+        $config['prev_link'] = '<i class="fas fa-chevron-left"></i>';
+
+        $config['prev_tag_open'] = '<li class="page-item">';
+        $config['prev_tag_close'] = '</li>';
+
+        $config['cur_tag_open'] = '<li class="page-item active"><a href="" class="page-link">';
+        $config['cur_tag_close'] = '</a></li>';
+
+        $config['num_tag_open'] = '<li class="page-item">';
+        $config['num_tag_close'] = '</li>';
+        $config['attributes'] = array('class' => 'page-link');
+
+        $this->pagination->initialize($config);
+
+        $page = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
+
+        $data['portfolio_about'] = $this->Materic_model->get_portfolio_about($config["per_page"], $page);
+
+        $data['links']  = $this->pagination->create_links();
+//--------------pagination end------------
+
         $data['portfolio_gallery'] = $this->Materic_model->get_portfolio();
-        $data['portfolio_about'] = $this->Materic_model->get_portfolio_about();
+
         $this->load->view('front/portfolio/portfolio_list',$data);
     }
 

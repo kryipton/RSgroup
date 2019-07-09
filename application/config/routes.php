@@ -298,6 +298,7 @@ $route['(:any)/certificates'] = 'Materic/certificates';
 
 //----------------------------------------------------Sertifikatlar---------------------------------------
 $route['(:any)/portfolio'] = 'Materic/portfolio';
+$route['(:any)/portfolio/(.*)'] = 'Materic/portfolio/$1';
 
 //----------------------------------------------------Sertifikatlar---------------------------------------
 $route['(:any)/portfolio_single/(.*)'] = 'Materic/portfolio_single/$1/$2';
