@@ -5,9 +5,7 @@
 
         <!--                    tablenin headeri-->
         <thead class="table-bordered">
-        <th>
-            #id
-        </th>
+
 
         <th>
             Adı
@@ -49,15 +47,13 @@
         <?php foreach ($all_pictures as $pic){ ?>
 
             <tr id="ord-<?php echo $pic["id"] ?>" class="c_tr">
-                <td>
-                    <?php echo $pic["id"]; ?>
-                </td>
+
                 <td class="col-sm-6">
                     <?php echo $pic["name"]; ?>
                 </td>
                 <td>
                     <img width="120px"
-                         height="80px"
+                         height="120px"
                          src= <?php echo base_url("uploads/certificates/$pic[name]")?>
                          alt= "Şəkil gostərilə bilmir">
                 </td>

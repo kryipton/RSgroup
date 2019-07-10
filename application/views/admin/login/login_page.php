@@ -5,7 +5,7 @@
 <!-- Login Screen -->
 <div class="login-wrapper">
     <h1>
-        <a href="<?php echo base_url("")?>">RSgroup MMC</a>
+        <a href="<?php echo base_url("")?>">RSgroup MMC Admin Panel</a>
     </h1>
     <form action="<?php echo base_url("ocean_secure_login_page_act") ?>" method="post">
         <div class="form-group">

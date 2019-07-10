@@ -19,9 +19,7 @@
 
             <!--                    tablenin headeri-->
             <thead>
-            <th>
-                №
-            </th>
+
 
             <th>
                 Portfolionun Azərbayca Adı
@@ -53,9 +51,7 @@
             <?php foreach ($all_portfolios as $pic){ ?>
 
                 <tr >
-                    <td>
-                        <?php echo $pic["id"]; ?>
-                    </td>
+
                     <td>
                         <?php echo $pic["name_az"]; ?>
                     </td>

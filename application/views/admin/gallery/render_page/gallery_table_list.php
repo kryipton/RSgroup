@@ -5,9 +5,7 @@
 
         <!--                    tablenin headeri-->
         <thead>
-        <th>
-            #id
-        </th>
+
 
         <th>
             Adı
@@ -49,9 +47,7 @@
         <?php foreach ($all_pictures as $pic){ ?>
 
             <tr id="ord-<?php echo $pic["id"] ?>" class="c_tr">
-                <td>
-                    <?php echo $pic["id"]; ?>
-                </td>
+
                 <td class="col-sm-4">
                     <?php echo $pic["name"]; ?>
                 </td>

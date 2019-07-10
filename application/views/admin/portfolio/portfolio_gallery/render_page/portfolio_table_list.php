@@ -5,9 +5,7 @@
 
         <!--                    tablenin headeri-->
         <thead class="table-bordered">
-        <th>
-            #id
-        </th>
+
 
         <th>
             Adı
@@ -53,9 +51,7 @@
         <?php foreach ($portfolio_gallery as $pic){ ?>
 
             <tr id="ord-<?php echo $pic["id"] ?>" class="c_tr">
-                <td>
-                    <?php echo $pic["id"]; ?>
-                </td>
+
                 <td class="col-sm-2">
                     <?php echo $pic["name"]; ?>
                 </td>

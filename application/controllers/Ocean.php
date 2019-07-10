@@ -5,9 +5,19 @@ class Ocean extends CI_Controller{
     {
         parent::__construct();
 
+
+//        saytin login olmasi ile bagli isler
         if (!get_active_user() && $this->uri->segment(1) != "ocean_secure_login_page" && $this->uri->segment(1) != "ocean_secure_login_page_act"){
             redirect(base_url('ocean_secure_login_page'));
         }
+        if (get_active_user() && $this->uri->segment(1) == "ocean_secure_login_page"){
+            redirect(base_url('admin_home'));
+        }
+        if (get_active_user() && $this->uri->segment(1) == "ocean_secure_login_page_act"){
+            redirect(base_url('admin_home'));
+        }
+//        saytin login olmasi ile bagli isler
+
 
     }
 

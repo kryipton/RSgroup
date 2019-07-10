@@ -387,7 +387,6 @@ $(document).ready(function () {
     });
 
 
-    //switchlernen birden cox elementi secmek
     var idler2 = [];
     $(".isChoosed_gallery_certificates").change(function () {
 
@@ -405,7 +404,6 @@ $(document).ready(function () {
 
     });
 
-
     //galereyadaki birden cox elementi silmek
     $('.c_all_delete_certificates').click(function () {
 
@@ -419,29 +417,29 @@ $(document).ready(function () {
             dangerMode: true,
         })
             .then((willDelete) => {
-            if (willDelete) {
-                // window.location.href = $data_url;
-                $.post($data_url_2, {data: idler}, function (response) {
+                if (willDelete) {
+                    // window.location.href = $data_url;
+                    $.post($data_url_2, {data: idler2}, function (response) {
 
-                    $('.c_img_list_container_certificates').html(response);
+                        $('.c_img_list_container_certificates').html(response);
 
-                    // multiple switchler ucun kod
-                    var elems = Array.prototype.slice.call(document.querySelectorAll('.js-switch'));
+                        // multiple switchler ucun kod
+                        var elems = Array.prototype.slice.call(document.querySelectorAll('.js-switch'));
 
-                    elems.forEach(function(html) {
-                        var switchery = new Switchery(html);
+                        elems.forEach(function(html) {
+                            var switchery = new Switchery(html);
 
-                    });lems = Array.prototype.slice.call(document.querySelectorAll('.js-switch'));
-
-
-                    //tek switch ucun kod
-                    // var elem = document.querySelector('.js-switch');
-                    // var init = new Switchery(elem);
+                        });lems = Array.prototype.slice.call(document.querySelectorAll('.js-switch'));
 
 
-                })
-            }
-        });
+                        //tek switch ucun kod
+                        // var elem = document.querySelector('.js-switch');
+                        // var init = new Switchery(elem);
+
+
+                    })
+                }
+            });
         event.preventDefault();
     });
 
