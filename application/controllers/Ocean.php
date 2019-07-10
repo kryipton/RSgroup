@@ -39,7 +39,7 @@ class Ocean extends CI_Controller{
 
                 $this->session->set_flashdata("login_alert", "Daxil Oldunuz");
                 $this->session->set_userdata("user", $user["id"]);
-                redirect(base_url("admin_home"));
+                redirect(base_url("ocean_admin_home"));
 
             }else{
                 $this->session->set_flashdata("login_alert", "İsdifadəçi adı və ya Şifrə yanlışdır");
@@ -361,13 +361,13 @@ class Ocean extends CI_Controller{
                 "desc_en" => $en,
             ));
             $this->session->set_flashdata("about_success", "Haqqımızda bölməsi yeniləndi");
-            redirect(base_url("admin_about"));
+            redirect(base_url("ocean_admin_about"));
 
 
 //        eger bosdularsa alert ver
         }else{
             $this->session->set_flashdata("about_alert", "Zəhmət olmasa boşluq buraxmayın!");
-            redirect(base_url("admin_about"));
+            redirect(base_url("ocean_admin_about"));
         }
 
 
@@ -430,13 +430,13 @@ class Ocean extends CI_Controller{
                 "phone" => $phone,
             ));
             $this->session->set_flashdata("contact_success", "Əlaqə bölməsi yeniləndi");
-            redirect(base_url("admin_contact"));
+            redirect(base_url("ocean_admin_contact"));
 
 
 //        eger bosdularsa alert ver
         }else{
             $this->session->set_flashdata("contact_alert", "Zəhmət olmasa boşluq buraxmayın!");
-            redirect(base_url("admin_contact"));
+            redirect(base_url("ocean_admin_contact"));
         }
 
 
@@ -474,13 +474,13 @@ class Ocean extends CI_Controller{
                 "desc_en" => $en,
             ));
             $this->session->set_flashdata("certificates_success", "Sertifikatlar bölməsi yeniləndi");
-            redirect(base_url("admin_certificates"));
+            redirect(base_url("ocean_admin_certificates"));
 
 
 //        eger bosdularsa alert ver
         }else{
             $this->session->set_flashdata("certificates_alert", "Zəhmət olmasa boşluq buraxmayın!");
-            redirect(base_url("admin_certificates"));
+            redirect(base_url("ocean_admin_certificates"));
         }
     }
 

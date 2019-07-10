@@ -5,7 +5,7 @@
 
 <h1 class="text-center c_about">Əlaqə Bölməsi</h1>
 
-<form method="post" enctype="multipart/form-data" action="<?php echo base_url("admin_contact_update")?>">
+<form method="post" enctype="multipart/form-data" action="<?php echo base_url("ocean_admin_contact_update")?>">
 
     <!--az rus ve en dillerinin navbar linki-->
     <ul class="c_nav_pills nav nav-pills">

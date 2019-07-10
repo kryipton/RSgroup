@@ -27,7 +27,7 @@
 
         <!--dropzone-->
         <form data-url = "<?php echo base_url("refresh_image_list_certificates")?>"
-              action="<?php echo base_url("admin_certificates_add")?>"
+              action="<?php echo base_url("ocean_admin_certificates_add")?>"
               class="dropzone c_dropzone_adds"
               id="dropzone_certificates">
 
@@ -71,7 +71,7 @@
 
 
     <div id="c_about" class=" tab-pane fade">
-        <form method="post" enctype="multipart/form-data" action="<?php echo base_url("admin_certificates_update")?>">
+        <form method="post" enctype="multipart/form-data" action="<?php echo base_url("ocean_admin_certificates_update")?>">
 
             <!--az rus ve en dillerinin navbar linki-->
             <ul class="c_nav_pills nav nav-pills">

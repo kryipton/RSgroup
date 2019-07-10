@@ -35,11 +35,11 @@
 <!--                        Ana seyfe-->
                         <li>
                             <a
-                                    <?php if ($this->uri->segment(1) == "admin_home" || $this->uri->segment(1) == "Ocean"){?>
+                                    <?php if ($this->uri->segment(1) == "ocean_admin_home" || $this->uri->segment(1) == "Ocean"){?>
                                         class="current"
                                     <?php }?>
 
-                                    href="<?php echo base_url("admin_home")?>">
+                                    href="<?php echo base_url("ocean_admin_home")?>">
                                 <span aria-hidden="true" class="hightop-home"></span>Ana Seyfe
                             </a>
                         </li>
@@ -50,11 +50,11 @@
  <!--                        Haqqimizda-->
                         <li>
                             <a
-                                    <?php if ($this->uri->segment(1) == "admin_about"){?>
+                                    <?php if ($this->uri->segment(1) == "ocean_admin_about"){?>
                                         class="current"
                                     <?php }?>
 
-                                    href="<?php echo base_url("admin_about")?>">
+                                    href="<?php echo base_url("ocean_admin_about")?>">
                                 <span aria-hidden="true" class="fa fa-book"></span>Haqqımızda
                             </a>
                         </li>
@@ -66,11 +66,11 @@
                         <li>
                             <a
 
-                                    <?php if ($this->uri->segment(1) == "admin_gallery"){?>
+                                    <?php if ($this->uri->segment(1) == "ocean_admin_gallery"){?>
                                         class="current"
                                     <?php }?>
 
-                                    href="<?php echo base_url("admin_gallery")?>">
+                                    href="<?php echo base_url("ocean_admin_gallery")?>">
                                 <span aria-hidden="true" class="hightop-gallery"></span>Galereya
                             </a>
                         </li>
@@ -102,11 +102,11 @@
 <!--                        Sertifikatlar-->
                         <li>
                             <a
-                                    <?php if ($this->uri->segment(1) == "admin_certificates"){?>
+                                    <?php if ($this->uri->segment(1) == "ocean_admin_certificates"){?>
                                         class="current"
                                     <?php }?>
 
-                                    href="<?php echo base_url("admin_certificates")?>">
+                                    href="<?php echo base_url("ocean_admin_certificates")?>">
                                 <span aria-hidden="true" class="hightop-star"></span>Sertifikatlar
                             </a>
                         </li>
@@ -137,11 +137,11 @@
 <!--                        Elaqe-->
                         <li>
                             <a
-                                    <?php if ($this->uri->segment(1) == "admin_contact"){?>
+                                    <?php if ($this->uri->segment(1) == "ocean_admin_contact"){?>
                                         class="current"
                                     <?php }?>
 
-                                    href="<?php echo base_url("admin_contact")?>">
+                                    href="<?php echo base_url("ocean_admin_contact")?>">
                                 <span aria-hidden="true" class="hightop-envelope"></span>Əlaqə
                             </a>
                         </li>
