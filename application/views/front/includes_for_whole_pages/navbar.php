@@ -86,7 +86,7 @@
                 <div class="col-lg-3 col-6 ">
                     <div class="logo-wrapper c_logo_div">
                         <div class="logo-wrapper-inner">
-                            <a href="index.html"><img src="<?php echo base_url("public/assets_front")?>/img/logo.png" alt=""></a>
+                            <a href="<?php echo base_url("")?>"><img src="<?php echo base_url("public/assets_front")?>/img/logo.png" alt=""></a>
                         </div>
                     </div>
                 </div>

@@ -19,9 +19,7 @@
 
             <!--                    tablenin headeri-->
             <thead>
-            <th>
-                №
-            </th>
+
 
             <th>
                 Xidmətin Azərbayca Adı
@@ -53,9 +51,7 @@
             <?php foreach ($service_names as $pic){ ?>
 
                 <tr >
-                    <td>
-                        <?php echo $pic["id"]; ?>
-                    </td>
+
                     <td>
                         <?php echo $pic["name_az"]; ?>
                     </td>
