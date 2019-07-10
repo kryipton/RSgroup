@@ -9,7 +9,7 @@
 
 <h1 class="text-center c_about">Haqqımızda Bölməsi</h1>
 
-<form method="post" enctype="multipart/form-data" action="<?php echo base_url("admin_about_update")?>">
+<form method="post" enctype="multipart/form-data" action="<?php echo base_url("ocean_admin_about_update")?>">
 
     <!--az rus ve en dillerinin navbar linki-->
     <ul class="c_nav_pills nav nav-pills">
@@ -86,7 +86,7 @@
 
      CKEDITOR.replace( 'editor1', {
         filebrowserBrowseUrl: '<?php echo base_url("public/assets_for_admin/javascripts")?>/CKfinder/ckfinder.html',
-        filebrowserUploadUrl: '<?php echo base_url("admin_about_image_upload")?>',
+        filebrowserUploadUrl: '<?php echo base_url("ocean_admin_about_image_upload")?>',
         width: 1200,
         height: 400,
 
@@ -100,7 +100,7 @@
 
     CKEDITOR.replace( 'editor2', {
         filebrowserBrowseUrl: '<?php echo base_url("public/assets_for_admin/javascripts")?>/CKfinder/ckfinder.html',
-        filebrowserUploadUrl: '<?php echo base_url("admin_about_image_upload")?>',
+        filebrowserUploadUrl: '<?php echo base_url("ocean_admin_about_image_upload")?>',
         height: 400,
         // filebrowserBrowseUrl: '/ckfinder/ckfinder.html',
         // filebrowserUploadUrl: '/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
@@ -111,7 +111,7 @@
 
     CKEDITOR.replace( 'editor3', {
         filebrowserBrowseUrl: '<?php echo base_url("public/assets_for_admin/javascripts")?>/CKfinder/ckfinder.html',
-        filebrowserUploadUrl: '<?php echo base_url("admin_about_image_upload")?>',
+        filebrowserUploadUrl: '<?php echo base_url("ocean_admin_about_image_upload")?>',
         height: 400,
         // filebrowserBrowseUrl: '/ckfinder/ckfinder.html',
         // filebrowserUploadUrl: '/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',

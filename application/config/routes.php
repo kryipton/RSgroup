@@ -74,7 +74,7 @@ $route["ocean_secure_logout_page_act"] = "Ocean/ocean_logout_secure_act";
 //----------------------------------------------Dashboard-----------------------------------------------------------------------------
 
 //dashboard
-$route["admin_home"] = "Ocean/dashboard";
+$route["ocean_admin_home"] = "Ocean/dashboard";
 
 //ana seyfeye sekil elave edilmesi
 $route["ocean_admin_dashboard_brend_add"] = "Ocean/ocean_admin_dashboard_brend_add";
@@ -99,10 +99,10 @@ $route["delete_selected_element_home"] = "Ocean/delete_selected_element_home";
 //----------------------------------------------Galereya-----------------------------------------------------------------------------
 
 //galereya
-$route["admin_gallery"] = "Ocean/gallery";
+$route["ocean_admin_gallery"] = "Ocean/gallery";
 
 //galereyaya sekil elave edilmesi
-$route["admin_gallery_add"] = "Ocean/gallery_add";
+$route["ocean_admin_gallery_add"] = "Ocean/gallery_add";
 
 //galereyadaki sekilin statusunun deyisirilmesi
 $route["change_status/(.*)"] = "Ocean/change_status/$1";
@@ -129,13 +129,13 @@ $route["delete_selected_element_gallery"] = "Ocean/delete_selected_element_galle
 //----------------------------------------------About-----------------------------------------------------------------------------
 
 //about hissesinin ana seyfesi
-$route["admin_about"] = "Ocean/admin_about";
+$route["ocean_admin_about"] = "Ocean/admin_about";
 
 //about hissesinin editorunun sekil uploadi
-$route["admin_about_image_upload"] = "Ocean/admin_about_image_upload";
+$route["ocean_admin_about_image_upload"] = "Ocean/admin_about_image_upload";
 
 //about hissesinin update
-$route["admin_about_update"] = "Ocean/admin_about_update";
+$route["ocean_admin_about_update"] = "Ocean/admin_about_update";
 
 //----------------------------------------------About-----------------------------------------------------------------------------
 
@@ -146,13 +146,10 @@ $route["admin_about_update"] = "Ocean/admin_about_update";
 //----------------------------------------------Elaqe-----------------------------------------------------------------------------
 
 //contact hissesinin ana seyfesi
-$route["admin_contact"] = "Ocean/admin_contact";
-
-//contact hissesinin editorunun sekil uploadi
-$route["admin_contact"] = "Ocean/admin_contact";
+$route["ocean_admin_contact"] = "Ocean/admin_contact";
 
 //contacthissesinin update
-$route["admin_contact_update"] = "Ocean/admin_contact_update";
+$route["ocean_admin_contact_update"] = "Ocean/admin_contact_update";
 
 //----------------------------------------------Elaqe-----------------------------------------------------------------------------
 
@@ -162,14 +159,14 @@ $route["admin_contact_update"] = "Ocean/admin_contact_update";
 //----------------------------------------------Sertificatlar-----------------------------------------------------------------------------
 
 //sertifikatlar hissesinin ana seyfesi
-$route["admin_certificates"] = "Ocean/admin_certificates";
+$route["ocean_admin_certificates"] = "Ocean/admin_certificates";
 
 //sertifikatlar hissesinin haqqinda hissesi duzenleme
-$route["admin_certificates_update"] = "Ocean/admin_certificates_update";
+$route["ocean_admin_certificates_update"] = "Ocean/admin_certificates_update";
 
 
 //sertifikatlar hissesinin sekillerini elave etme
-$route["admin_certificates_add"] = "Ocean/admin_certificates_add";
+$route["ocean_admin_certificates_add"] = "Ocean/admin_certificates_add";
 
 //sertifikatlar hissesinin sekillerini elave etme
 $route["refresh_image_list_certificates"] = "Ocean/refresh_image_list_certificates";
