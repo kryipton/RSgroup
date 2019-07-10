@@ -21,10 +21,19 @@
 .c_nav_pills{
     background-color: lightgrey;
     height: 40px;
+    max-width: 150px;
+    color: white!important;
+    margin: 0 auto;
+}
+
+.c_nav_pills2{
+    background-color: lightgrey;
+    height: 40px;
     max-width: 279px;
     color: white!important;
     margin: 0 auto;
 }
+
 
 .c_about{
     margin-bottom: 30px;
