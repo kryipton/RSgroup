@@ -8,7 +8,7 @@
 <form method="post" enctype="multipart/form-data" action="<?php echo base_url("ocean_admin_contact_update")?>">
 
     <!--az rus ve en dillerinin navbar linki-->
-    <ul class="c_nav_pills nav nav-pills">
+    <ul class="c_nav_pills2 nav nav-pills">
         <li class="active"><a data-toggle="pill" href="#az">AZ</a></li>
         <li><a data-toggle="pill" href="#ru">RU</a></li>
         <li><a data-toggle="pill" href="#en">EN</a></li>
