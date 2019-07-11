@@ -9,7 +9,7 @@
                     <div class="col-xl-6 col-lg-8">
                         <div class="hero-txt">
                             <span>RSGROUP</span>
-                            <h1>Gəmilərin mobilizasiyası</h1>
+                            <h1> <?php echo $this->lang->line("mobilizasiya"); ?></h1>
                         </div>
                     </div>
                 </div>
@@ -23,7 +23,7 @@
                     <div class="col-xl-6 col-lg-8">
                         <div class="hero-txt">
                             <span>RSGROUP</span>
-                            <h1>Quru tərsanə xidmətləri</h1>
+                            <h1> <?php echo $this->lang->line("quru_tersane"); ?></h1>
                         </div>
                     </div>
                 </div>
@@ -37,7 +37,7 @@
                     <div class="col-xl-6 col-lg-8">
                         <div class="hero-txt">
                             <span>RSGROUP</span>
-                            <h1>Təmir və texniki xidmət</h1>
+                            <h1> <?php echo $this->lang->line("temir"); ?></h1>
                         </div>
                     </div>
                 </div>

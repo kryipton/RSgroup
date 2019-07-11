@@ -204,7 +204,19 @@
 
 <!--                                        portfolio-->
                                         <li >
-                                            <a href="#"><?php echo $this->lang->line("portfolio"); ?></a>
+                                            <a href="<?php
+
+                                            if ($this->session->userdata("dil") == "az"){
+                                                echo base_url('az/portfolio');
+                                            }
+                                            elseif ($this->session->userdata("dil") == "en"){
+                                                echo base_url('en/portfolio');
+                                            }
+                                            elseif ($this->session->userdata("dil") == "ru"){
+                                                echo base_url('ru/portfolio');
+                                            }
+
+                                            ?>"><?php echo $this->lang->line("portfolio"); ?></a>
                                         </li>
 <!--                                        portfolio-->
 

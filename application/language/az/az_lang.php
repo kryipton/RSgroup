@@ -10,6 +10,9 @@ $lang["sertifikatlar"] = "Sertifikatlar";
 $lang["servisler"] = "Xidmətlər";
 $lang["linkler"] = "Linklər";
 $lang["huquqlar"] = "© Müəllif hüquqları 2019 RSgroup. Bütün hüquqlar qorunur.";
+$lang["mobilizasiya"] = "Gəmilərin mobilizasiyası";
+$lang["quru_tersane"] = "Quru tərsanə xidmətləri";
+$lang["temir"] = "Təmir və texniki xidmət";
 
 //=======menim hissem=============
 
