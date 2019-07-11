@@ -1,3 +1,16 @@
+<!--
+
+    DEVELOPERS
+
+    Lələyev Cavid   : cavidleleyev@gmail.com
+    Qədirov Mütalib : mutalib0101@gmail.com
+
+
+
+
+-->
+
+
 <!DOCTYPE html>
 <html lang="en">
 
