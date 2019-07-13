@@ -17,7 +17,9 @@
                         <li class="dropdown user hidden-xs"><a data-toggle="dropdown" class="dropdown-toggle" href="#">
                                 <img width="34" height="34" src="<?php echo base_url("uploads/home/admin.png")?>" />Admin<b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href="<?php echo base_url("ocean_secure_logout_page_act")?>">
+                                <li><a href="<?php echo base_url("ocean_user_update")?>">
+                                        <i class="fa fa-user"></i>Məlumat yeniləmə</a>
+                                </li><li><a href="<?php echo base_url("ocean_secure_logout_page_act")?>">
                                         <i class="fa fa-sign-out"></i>Çıxış</a>
                                 </li>
                             </ul>

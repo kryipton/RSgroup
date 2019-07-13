@@ -72,6 +72,76 @@ class Ocean extends CI_Controller{
 //    =========================Login hissesi=========================================
 
 
+//    =========================Login update=========================================
+
+    public function update_page()
+    {
+        $where =[
+            'id' => $this->session->userdata('user')];
+        $data['user'] = $this->Ocean_Model->check_login($where);
+        $this->load->view('admin/info_update/whole_page', $data);
+    }
+
+    public function username_update()
+    {   $where =[
+        'id' => $this->session->userdata('user')];
+        $usr = strip_tags($this->input->post("usr"));
+        if (!empty($usr)){
+            $data=[
+                "username" => $usr,
+            ];
+
+            $this->Ocean_Model->update_usr($where,$data);
+            $this->session->set_flashdata("update_alert", "Username yeniləndi");
+            redirect(base_url('ocean_user_update'));
+        }else{
+            $this->session->set_flashdata("update_alert_wrong", "Username boş buraxılmamalıdır!");
+            redirect(base_url('ocean_user_update'));
+        }
+    }
+
+    public function password_update()
+    {
+        $where =[
+            'id' => $this->session->userdata('user')];
+        $psw1 = strip_tags($this->input->post("psw1"));
+        $psw2 = strip_tags($this->input->post("psw2"));
+       if (!empty($psw1) && !empty($psw2)) {
+           if ($psw1 == $psw2) {
+               $data = [
+                   'password' => md5($psw1),
+               ];
+               $this->Ocean_Model->update_psw($where,$data);
+               $this->session->set_flashdata("update_alert", "Şifrəniz yeniləndi yeniləndi");
+               redirect(base_url('ocean_user_update'));
+
+           }else{
+               $this->session->set_flashdata("update_alert_wrong", "Şifrələri düzgün daxil edin!");
+               redirect(base_url('ocean_user_update'));
+           }
+
+       }else{
+           $this->session->set_flashdata("update_alert_wrong", "Şifrə boş olmamalıdır!");
+           redirect(base_url('ocean_user_update'));
+       }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//    =========================Login update=========================================
+
+
 
 
 

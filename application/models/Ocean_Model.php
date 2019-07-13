@@ -10,6 +10,25 @@ class Ocean_Model extends CI_Model {
 //    =========================login=========================================
 
 
+
+
+//    =========================Login update=========================================
+
+    public function update_usr($where,$data)
+    {
+        $this->db->where($where)->update("users",$data);
+    }
+
+    public function update_psw($where,$data)
+    {
+        $this->db->where($where)->update("users",$data);
+    }
+
+
+//    =========================login upate=========================================
+
+
+
 //    =========================Ana seyfe=========================================
 
     public function add_picture_to_home($data){
